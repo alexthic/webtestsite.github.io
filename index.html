@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title id="title"></title>
+  </head>
+  <body>
+    <script>
+      var title = document.getElementById("title");
+      var text = "My Website Title";
+      var delay = 100; // milliseconds
+
+      for (var i = 0; i < text.length; i++) {
+        setTimeout(function() {
+          title.innerHTML += text.charAt(i);
+        }, i * delay);
+      }
+    </script>
+  </body>
+</html>
